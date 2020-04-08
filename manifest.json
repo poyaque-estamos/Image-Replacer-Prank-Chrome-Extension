@@ -1,0 +1,19 @@
+  {
+    "name": "Image replacer prank",
+    "version": "1.0",
+    "description": "Puts pictures randomly on site's images",    
+    "content_scripts": [
+      {
+        "matches": ["*://*/*"],
+        "js": ["random-replacer.js"]
+      }      
+    ],
+    "icons": {       
+      "48": "icon48.png"
+    },
+    "permissions": [
+      "storage"
+    ],
+    "options_page": "options.html",
+    "manifest_version": 2
+  }
